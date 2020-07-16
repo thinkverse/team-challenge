@@ -40,9 +40,34 @@ img {
 }
 
 .content .member:nth-child(2n) {
-    margin-top: 3rem;
     grid-column: 2;
 }
+
+.container .member {
+    display: grid;
+    grid-template-columns: auto, 1rem;
+    grid-column-gap: 0.5rem;
+    grid-template-rows: repeat(2, auto);
+}
+
+.content .member img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.content .member span {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.content .member p {
+    font-weight: 600;
+    grid-row: 2;
+}
+
 
 @media (min-width: 1024px) {
     .container {
@@ -64,7 +89,6 @@ img {
     }
 
     .content .member:last-child {
-        margin-top: 0 !important;
         grid-row: 2;
     }
 }
