@@ -139,6 +139,15 @@ footer a {
         margin-bottom: 6rem;
     }
 
+    .content .member-card {
+        transition: ease 0.3s;
+        cursor: pointer;
+    }
+
+    .content .member-card:hover {
+        transform: scale(1.05);
+    }
+
     .content .member-card:nth-child(2n) {
         margin-top: 4rem;
     }
