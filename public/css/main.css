@@ -17,3 +17,29 @@ footer {
     font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 600;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.content .member {
+    margin-top: 3rem;
+}
+
+.content .member:nth-child(odd) {
+    margin-top: 0rem !important;
+    grid-column: 1;
+}
