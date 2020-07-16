@@ -93,6 +93,7 @@ img {
 }
 
 .content .member p {
+    font-size: 0.9rem;
     font-weight: 600;
     grid-row: 2;
 }
@@ -145,5 +146,13 @@ footer a {
 
     .content .member:nth-child(5n) {
         grid-column: 2;
+    }
+
+    .content .member p {
+        font-size: 1.2rem;
+    }
+
+    .content .member span {
+        font-size: 0.8rem;
     }
 }
